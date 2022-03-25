@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+canvas {
+    border: 5px solid black;
+}
+
+img {
+    display: none;
+}
+
+button {
+    display: none;
+}
+
+#addPlayerBtn, #rollTwoBtn, #eraseBtn, #submitBtn, #endTurnBtn {
+    display: initial;
+}
+
+.count {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+.rank-box {
+    text-align: left;
+    padding-left: 50px;
+    float: left;
+    width: 50%;
+}
+
