@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snakes & Ladders</title>
+</head>
+<body>
+    <h1>Play Snakes & Ladders</h1>
+
+    <p><button id="addPlayerBtn">+1 Player</button> (Maximum of 4 Players)</p>
+
+    <!-- MODAL -->
+    <p>
+        <button id="show-btn">
+            Show Instructions
+        </button>
+    </p>
+    <div id="modal">
+        <div class="modal-container">
+            <h2>Instructions & Rules</h2>
+            <p>
+                Add a player, then roll the dice and make the first move.  Once everyone has made a character AND made their first move, you can continue to play Snakes & Ladders normally.  Good Luck!
+                <ul>
+                    <li class="info">All players should roll once and add their roll correctly</li>
+                    <li class="info">Press submit to see if any snakes or ladders have activated; make the following adjustments to players' tiles.</li>
+                    <li class="info">Press the submit button and make all changes BEFORE ending the turn</li>
+                    <li class="info">To win the game, you must reach EXACTLY 100</li>
+                    <li class="info">Going over 100 results in going backwards the same amount.</li>
+                    <li class="info">Ex. Rolling 6 when you are at Tile 95 would bring you to 99.  Rolling 10 at Tile 99 would bring you to 91.</li>
+                </ul>
+            </p>
+            <p>
+                <button id="hide-btn">Hide Instructions</button>
+            </p>
+        </div>
+    </div>
+
+    <canvas id="myCanvas"></canvas>
+
+    <p id="roll-result">Roll 2 Die: <button id="rollTwoBtn">ROLL</button> <b id="result"></b></p>
+
+    <p class="rank-box">Turn Counter: <b id="turn-num"></b>, Current Rankings:</p> 
+    <ol class="rank-box">
+        <li id="rank-one"></li>
+        <li id="rank-two"></li>
+        <li id="rank-three"></li>
+        <li id="rank-four"></li>
+    </ol>
+
+    <p><button id="buttonP1">Player 1</button><input id="inputOne" type="number" value="0" min="0" max="100">
+    <br>
+    <button id="buttonP2">Player 2</button><input id="inputTwo" type="number" value="0" min="0" max="100">
+    <br>
+    <button id="buttonP3">Player 3</button><input id="inputThree" type="number" value="0" min="0" max="100">
+    <br>
+    <button id="buttonP4">Player 4</button><input id="inputFour" type="number" value="0" min="0" max="100">
+    <br>
+    <button id="submitBtn">Submit</button><button id="endTurnBtn">End Turn</button></p>
+
+    <p>Snakes & Ladders:</p>
+    <p id="updatesP1"></p>
+    <p id="updatesP2"></p>
+    <p id="updatesP3"></p>
+    <p id="updatesP4"></p>
+   
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
