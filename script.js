@@ -1,4 +1,3 @@
-
 // Snakes and Ladders
 // Setup Canvas and Graphics Context
 let cnv = document.getElementById("myCanvas");
@@ -7,7 +6,6 @@ cnv.width = 1000;
 cnv.height = 1000;
 
 // Global Variables
-let rollOneEl = document.getElementById("rollOneBtn");
 let rollTwoEl = document.getElementById("rollTwoBtn");
 let resultEl = document.getElementById("result");
 let playerBtnEl = document.getElementById("addPlayerBtn");
