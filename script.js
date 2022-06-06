@@ -1,11 +1,3 @@
-// NEED TO DO
-// 1. Animate all ladders and snakes
-// Include random colors for each ladder/snake (strokestyle)
-// Limit values to be positive and below 100
-// pressing up arrow when placeOne = 100, will actually -1 = 99
-
-// Program ideas
-// 1. Password strength check
 
 // Snakes and Ladders
 // Setup Canvas and Graphics Context
